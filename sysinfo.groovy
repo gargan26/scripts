@@ -157,15 +157,6 @@ try {
 // SPK
 println 'Package: ' + Settings.getApplicationDeployment().toUpperCase()
 
-// FileBot License T1000 (Valid-Until: 2019-06-20)
-try {
-	print 'License: '
-	println Settings.LICENSE.check()
-} catch(Throwable error) {
-	println error.getMessage()
-}
-
-
 // CHECK FOR UPDATES
 if (!Settings.isAutoUpdateEnabled()) {
 	try {
